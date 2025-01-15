@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/resp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Michroma&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top section with the background and navigation bars-->
+    <section class="part1">
+        <div class="header">
+            <div class="left-header">
+                <div class="logo">
+                    <a href="home.html"><img src="./assets/logo.png" /></a>
+                </div>
+                <div class="navbar">
+                    <a href="home.html">Home</a>
+                    <a href="aboutus.html">About us</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="buy">
+                    <a href="shop.html"><button>Buy now</button></a>
+                </div>
+            </div>
+            <div class="right-header">
+                <div class="icons">
+                    <img src="./assets/shopping.gif" />
+                    <img src="./assets/search.svg" />
+                </div>
+                <div class="btn">
+                    <button>My account</button>
+                    <img src="./assets/arrow_right.svg" />
+                </div>
+            </div>
+            <div class="hamburger">
+                <img src="./assets/hamburger_menu.svg" id="hambtn" onclick="hamfunc()"/>
+            </div>
+        </div>
+        <div class="container">
+            <div class="spring">
+                <div class="top">
+                    <span>2020</span>
+                    <div class="line"></div>
+                </div>
+                <div class="mid">
+                    <div class="imgs">
+                        <img src="./assets/arrowleft.svg" />
+                        <img src="./assets/arrowright.svg" />
+                    </div>
+                    <div class="words">
+                        <p>Spring <br> collection</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>spring sale | up to 50% off</p>
+                    <a href="shop.html"><button>Our collection</button></a>
+                </div>
+            </div>
+            <div class="images">
+                <div class="top-image">
+                    <img src="./assets/clothing2-slider-pic4.png" />
+                </div>
+                <div class="bottom-images">
+                    <div class="img1"> 
+                    <img src="./assets/clothing2-slider-pic2.jpg" />
+                    <p>Woman</p>
+                    <div class="line"></div>
+                </div> 
+                    <div class="img2"> 
+                    <img src="./assets/clothing2-slider-pic3.jpg" />
+                    <p>Men</p>
+                    <div class="line"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hamburger Navbar -->
+        <div class="separatenavbar  animate__animated hide" id="separatenavbar">
+            <div class="img">
+                <img src="./assets/close.svg" id="close" onclick="closeonclick()"/>
+            </div>
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About us</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <a href="shop.html"><button>Buy now</button></a>
+            <button>My account</button>
+        </div>
+    </section>
+
+    <!-- Second section with the summary of shopping items -->
+    <section class="part2">
+        <div class="wrapper">
+            <div class="top">
+                <div class="left">
+                    <span>Featured</span>
+                    <h1>Weekly deals</h1>
+                </div>
+                <div class="right">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <img src="./assets/clothing2-products-pic8-300x300.jpg" />
+                        <div class="star"><img src="./assets/star.svg" /></div>
+                        <span>Quisque lorem tortor</span>
+                        <p>&pound;28.00 - &pound;30.00</p>
+                    </li>
+                    <li>
+                        <img src="assets/clothing2-products-pic7-300x300.jpg" />
+                        <div class="star"><img src="./assets/star.svg" /></div>
+                        <span>Curabitur et ligula</span>
+                        <div class="costs">
+                            <p>&pound;12.50</p><strong>&pound;11.20</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/clothing2-products-pic6-300x300.jpg" />
+                        <span>Etiam ullamcorper</span>
+                        <p>&pound;12.00</p>
+                    </li>
+                    <li>
+                        <img src="assets/clothing2-products-pic5-300x300.jpg" />
+                        <span>Nulla imperdiet sit amet</span>
+                        <p>&pound;25.00</p>
+                    </li>
+                </ul>
+                <a href="shop.html"><div class="btn">
+                    <button>See all products</button>
+                    <img src="./assets/arrow_right.svg" />
+                </div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Another section with the summary of shopping items -->
+    <section class="part3">
+        <div class="wrapper">
+            <div class="top">
+                <div class="left">
+                    <span>Featured</span>
+                    <h1>Weekly deals</h1>
+                </div>
+                <div class="right">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <img src="assets/clothing2-products-pic2-300x300.jpg" />
+                        <span>Aliquam erat ac ipsum</span>
+                        <p>&pound;24.00</p>
+                    </li>
+                    <li>
+                        <img src="assets/clothing2-products-pic11-300x300.jpg" />
+                        <span>Aliquam sem</span>
+                        <p>&pound;16.00</p>
+                    </li>
+                    <li>
+                        <img src="assets/clothing2-products-pic7-300x300.jpg" />
+                        <div class="star"><img src="./assets/star.svg" /></div>
+                        <span>Curabitur et ligula</span>
+                        <div class="costs">
+                            <p>&pound;12.50</p><strong>&pound;11.20</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/clothing2-products-pic6-300x300.jpg" />
+                        <span>Etiam ullamcorper</span>
+                        <p>&pound;12.00</p>
+                    </li>
+                </ul>
+                <a href="shop.html"><div class="btn">
+                    <button>See all products</button>
+                    <img src="./assets/arrow_right.svg" />
+                </div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section about the story of the company -->
+    <section class="part4">
+        <div class="wrapper">
+            <div class="header">
+                <h1>Who we are</h1>
+            </div>
+            <div class="contents">
+                <div class="image">
+                    
+                </div>
+                <div class="story">
+                    <h4>Our story</h4>
+                    <span>Ut ultricies imperdiet sodales. Aliquam fringilla
+                        aliquam ex sit amet elementum eleifend erat at
+                        justo fringilla imperdiet id ac magna ac magna.</span>
+                    <p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam
+                        vel justo cursus, faucibus lorem eget, egestas eros. Maecenas
+                        eleifend erat at justo fringilla imperdiet id ac magna eu,
+                        molestie tortor lorem eget egestas.</p>
+                        <a href="aboutus.html"><div class="btn">
+                            <img src="./assets/arrow_right.svg" />
+                            <button>Learn more</button>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section with the services provided by the company -->
+    <section class="part5">
+        <ul>
+            <li>
+                <img src="assets/clothing2-home-icon1.png" />
+                <span>Always free shipping</span>
+                <p>Lorem ipsum dolor sit amet mauris
+                    dolor bibendum sapien</p>
+            </li>
+            <li>
+                <img src="assets/clothing2-home-icon2.png" />
+                <span>14 day return policy</span>
+                <p>Nulla imperdiet sit amet magna
+                    vestibulum dapibus</p>
+            </li>
+            <li>
+                <img src="assets/clothing2-home-icon3.png" />
+                <span>Quick delivery in 48h</span>
+                <p>Nullam wisi ultricies gravida vitae
+                    dapibus risus</p>
+            </li>
+            <li>
+                <img src="assets/clothing2-home-icon4.png" />
+                <span>Online payment</span>
+                <p>Lorem ipsum dolor sit amet mauris
+                    dolor bibendum sapien</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Section promoting the 20% off sale -->
+    <section class="part6">
+        <div class="wrapper">
+            <div class="left">
+                
+            </div>
+            <div class="mid">
+                <span>get 20% off</span>
+                <p>Fusce dolor velit laoreet</p>
+                <a href="shop.html"><div class="btn">
+                    <button>Learn more</button>
+                    <img src="./assets/arrow_right.svg" />
+                </div></a>
+            </div>
+            <div class="right">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- The bottom section where all the information about the company are given -->
+    <section class="footer">
+        <div class="wrapper">
+            <div class="contacts">
+                <div class="logo">
+                    <img src="./assets/logo.png" />
+                </div>
+                <div class="mobile">
+                    <img src="./assets/phone.svg" />
+                    <p>+61 (0) 383 766 284</p>
+                </div>
+                <div class="mail">
+                    <img src="./assets/mail.svg" />
+                    <p>noreply@envato.com</p>
+                </div>
+                <div class="images">
+                    <img src="./assets/clothing2-footer-pic1.png" />
+                </div>
+            </div>
+            <div class="ul1">
+                <ul>
+                    <li>
+                        <strong>Delivery</strong>
+                        <ul>
+                            <li><a href="#">-How it Works</a></li>
+                            <li><a href="#">-Free Delivery</a></li>
+                            <li><a href="#">-FAQ</a></li>
+                            <li><a href="#">-Payment methods</a></li>
+                            <li><a href="#">-Delivery areas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="ul2">
+                <ul>
+                    <li>
+                        <strong>Customer service</strong>
+                        <ul>
+                            <li><a href="#">-Orders</a></li>
+                            <li><a href="#">-Downloads</a></li>
+                            <li><a href="#">-Addresses</a></li>
+                            <li><a href="#">-Account details</a></li>
+                            <li><a href="#">-Logout</a></li>
+                            <li><a href="#">-Lost password</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="ul3">
+                <ul>
+                    <li>
+                        <strong>Useful links</strong>
+                        <ul>
+                            <li><a href="#">-Contact us</a></li>
+                            <li><a href="#">-Help & About us</a></li>
+                            <li><a href="#">-Shipping & Returns</a></li>
+                            <li><a href="#">-Refund Policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div class="bottom-wrapper">
+            <div class="copywright">
+                <p>&copy; 2021 - BeTheme. Muffin group - HTML by BeantownThemes</p>
+            </div>
+            <div class="policies">
+                <a href="#">Terms and conditions</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Cookies</a>
+                <a href=".header"><img src="./assets/arrowup.svg" /></a>
+            </div>
+        </div>
+    </section>
+
+     <!-- importing external JS file -->
+     <script src="./style/script.js"></script>
+</body>
+</html>

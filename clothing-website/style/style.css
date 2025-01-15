@@ -1,0 +1,1597 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "Outfit",serif;
+}
+body{
+    background-color: white;
+}
+
+/* for closing and showing interfaces */
+.hide {
+    display: none !important;
+}
+.show {
+    display: flex !important;
+}
+
+/* Home's CSS */
+
+section.part1{
+    height: 150vh;
+    background-image: url("/assets/clothing2-slider-pic1-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    position: relative;
+}
+section.part1 div.separatenavbar{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 480px;
+    background-color: white;
+    border-radius: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+section.part1 div.separatenavbar div.img{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+}
+section.part1 div.separatenavbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px ;
+    font-weight: 300;
+}
+section.part1 div.separatenavbar button{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+section.part1 div.header{
+    background-color: white;
+    width: 1050px;
+    height: 90px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 20px;
+    position: relative;
+}
+section.part1 div.header div.left-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+section.part1 div.header div.logo img{
+   width: 150px;
+}
+section.part1 div.header div.navbar{
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+section.part1 div.header div.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px ;
+    font-weight: 300;
+    position: relative;
+}
+section.part1 div.header div.navbar a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: 120%;
+    height: 1px;
+    background: black;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+section.part1 div.header div.navbar a:hover::after{
+    transform: scaleX(1);
+}
+section.part1 div.header div.buy button{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+section.part1 div.header div.right-header{
+    display: flex;
+    height: 90px;
+    gap: 20px;
+    /* background-color: hsl(0deg 0% 96.08%); */
+    /* transform: perspective(500px) translate3d(-10px, 0, -60px); */
+}
+section.part1 div.header div.icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+section.part1 div.header div.hamburger{
+    display: none;
+}
+section.part1 div.header div.hamburger img{
+    filter: invert(1);
+}
+section.part1 div.header div.icons img:nth-child(1){
+    width: 25px;
+}
+section.part1 div.header div.icons img:nth-child(1):hover{
+    transform: scale(1.1) translateY(-5px);
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+section.part1 div.header div.icons img:nth-child(2):hover{
+    transform: scale(1.1) translateY(-5px);
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+section.part1 div.header div.right-header div.btn{
+    display: flex;
+    align-items: center;
+}
+section.part1 div.header div.right-header div.btn button{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+section.part1 div.spring{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    left: 12%;
+    margin-top: 200px;
+}
+section.part1 div.spring div.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+section.part1 div.spring div.top span{
+    font-size: 40px;
+}
+section.part1 div.spring div.top div.line{
+    width: 100px;
+    height: 1px;
+    background-color: black;
+}
+section.part1 div.spring div.mid{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+section.part1 div.spring div.mid div.imgs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -50px;
+}
+section.part1 div.spring div.mid div.words p{
+    font-size: 90px;
+    font-weight: 200;
+}
+section.part1 div.spring div.mid img{
+    width: 60px;
+}
+section.part1 div.spring div.bottom{
+    position: relative;
+    left: 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+section.part1 div.spring div.bottom p{
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+section.part1 div.spring div.bottom button{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    width: 35%;
+    border-radius: 0 0 15px 0;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+section.part1 div.spring div.bottom button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+section.part1 div.container{
+    display: flex;
+}
+section.part1 div.container div.images{
+    position: absolute;
+    right: 0;
+    margin-top: 220px;
+}
+section.part1 div.container div.images div.top-image{
+    position: relative;
+    left: 30%;
+}
+section.part1 div.container div.images div.bottom-images{
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+}
+section.part1 div.container div.images div.bottom-images img{
+    width: 250px;
+}
+section.part1 div.container div.images div.bottom-images img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+section.part1 div.container div.images div.bottom-images div.img1{
+    position: relative;
+    bottom: -60px;
+}
+section.part1 div.container div.images div.bottom-images div.img2{
+    position: relative;
+    top: -40px;
+}
+section.part1 div.container div.images div.bottom-images div.img1 p{
+    color: whitesmoke;
+    font-size: 35px;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+section.part1 div.container div.images div.bottom-images div.img1 div.line{
+    width: 120px;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+section.part1 div.container div.images div.bottom-images div.img2 p{
+    color: whitesmoke;
+    font-size: 35px;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+section.part1 div.container div.images div.bottom-images div.img2 div.line{
+    width: 50px;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+section.part2{
+    background-color: #eaf1f5;
+    position: relative;
+    height: auto;
+}
+section.part2 div.wrapper{
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    gap: 40px;
+}
+section.part2 div.wrapper div.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+section.part2 div.wrapper div.top div.right div.line{
+    width: 500px;
+    height: 1px;
+    background-color: black;
+}
+section.part2 div.wrapper div.top div.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.part2 div.wrapper div.top div.left span{
+    font-size: 25px;
+    font-weight: 300;
+}
+section.part2 div.wrapper div.top div.left h1{
+    font-size: 70px;
+    font-weight: 200;
+}
+section.part2 div.wrapper div.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+section.part2 div.wrapper div.bottom ul{
+    display: flex;
+    gap: 10px;
+}
+section.part2 div.wrapper div.bottom ul li img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+section.part2 div.wrapper div.bottom ul li{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 23%;
+    height: 330px;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+section.part2 div.wrapper div.bottom ul li div.star{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    background-color: black;
+    width: 130px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transform: rotate(140deg);
+}
+section.part2 div.wrapper div.bottom ul li div.star img{
+    width: 20px;
+    margin-left: 33px;
+    margin-top: 8px;
+}
+section.part2 div.wrapper div.bottom ul li span{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 200;
+}
+section.part2 div.wrapper div.bottom ul li p{
+    font-size: 18px;
+    padding-left: 15px;
+}
+section.part2 div.wrapper div.bottom ul li div.costs{
+    display: flex;
+    gap: 5px;
+}
+section.part2 div.wrapper div.bottom ul li div.costs p{
+    text-decoration: line-through;
+    color: #666;
+}
+section.part2 div.wrapper div.bottom ul li div.costs strong{
+    font-size: 18px;
+    text-decoration: underline;
+}
+section.part2 div.wrapper div.bottom div.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    width: 200px;
+    height: 50px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+section.part2 div.wrapper div.bottom a{
+    text-decoration: none;
+}
+section.part2 div.wrapper div.bottom div.btn:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+section.part2 div.wrapper div.bottom div.btn button{
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+section.part2 div.wrapper div.bottom div.btn img{
+    filter: invert(1);
+}
+section.part3{
+    background-color: white;
+    position: relative;
+    height: auto;
+}
+section.part3 div.wrapper{
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    gap: 40px;
+}
+section.part3 div.wrapper div.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+section.part3 div.wrapper div.top div.right div.line{
+    width: 500px;
+    height: 1px;
+    background-color: black;
+}
+section.part3 div.wrapper div.top div.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.part3 div.wrapper div.top div.left span{
+    font-size: 25px;
+    font-weight: 300;
+}
+section.part3 div.wrapper div.top div.left h1{
+    font-size: 70px;
+    font-weight: 200;
+}
+section.part3 div.wrapper div.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+section.part3 div.wrapper div.bottom ul{
+    display: flex;
+    gap: 10px;
+}
+section.part3 div.wrapper div.bottom ul li{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 23%;
+    height: 330px;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+section.part3 div.wrapper div.bottom ul li img:hover{
+    transform: scale(110%);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+section.part3 div.wrapper div.bottom ul li div.star{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    background-color: black;
+    width: 130px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transform: rotate(140deg);
+}
+section.part3 div.wrapper div.bottom ul li div.star img{
+    width: 20px;
+    margin-left: 33px;
+    margin-top: 8px;
+}
+section.part3 div.wrapper div.bottom ul li span{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 200;
+}
+section.part3 div.wrapper div.bottom ul li p{
+    font-size: 18px;
+    padding-left: 15px;
+}
+section.part3 div.wrapper div.bottom ul li div.costs{
+    display: flex;
+    gap: 5px;
+}
+section.part3 div.wrapper div.bottom ul li div.costs p{
+    text-decoration: line-through;
+    color: #666;
+}
+section.part3 div.wrapper div.bottom ul li div.costs strong{
+    font-size: 18px;
+    text-decoration: underline;
+}
+section.part3 div.wrapper div.bottom a{
+    text-decoration: none;
+}
+section.part3 div.wrapper div.bottom div.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    width: 200px;
+    height: 50px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+section.part3 div.wrapper div.bottom div.btn:hover{
+    transform: scale(110%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+section.part3 div.wrapper div.bottom div.btn button{
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+section.part3 div.wrapper div.bottom div.btn img{
+    filter: invert(1);
+}
+section.part4{
+    background-image: url("/assets/clothing2-sectionbg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+section.part4 div.wrapper{
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+section.part4 div.wrapper div.header h1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 200;
+}
+section.part4 div.wrapper div.contents{
+    display: flex;
+    height: 420px;
+    margin-bottom: 100px;
+}
+section.part4 div.wrapper div.contents div.image{
+    background-image: url("/assets/clothing2-columnbg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.part4 div.wrapper div.contents div.image,section.part4 div.wrapper div.contents div.story{
+    width: 50%;
+}
+section.part4 div.wrapper div.contents div.story{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+section.part4 div.wrapper div.contents div.story h4{
+    font-size: 30px;
+    font-weight: 300;
+}
+section.part4 div.wrapper div.contents div.story span{
+    font-size: 20px;
+    font-weight: 200;
+    width: 80%;
+}
+section.part4 div.wrapper div.contents div.story p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #666;
+    width: 77%;
+    line-height: 25px;
+}
+section.part4 div.wrapper div.contents div.story div.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: black;
+    padding: 15px 30px 15px 30px;
+}
+section.part4 div.wrapper div.contents div.story a{
+    text-decoration: none;
+}
+section.part4 div.wrapper div.contents div.story div.btn button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+section.part4 div.wrapper div.contents div.story div.btn:hover{
+    transform: scale(110%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+section.part4 div.wrapper div.contents div.story div.btn img{
+    filter: invert(1);
+}
+section.part5{
+    width: 1050px;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+section.part5 ul{
+    display: flex;
+    gap: 20px;
+}
+section.part5 ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+}
+section.part5 ul li span{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 300;
+}
+section.part5 ul li p{
+    font-weight: 300;
+    line-height: 25px;
+}
+section.part6{
+    margin-top: 100px;
+}
+section.part6 div.wrapper{
+    width: 1050px;
+    height: 230px;
+    margin: 0px  auto;
+    display: flex;
+}
+section.part6 div.wrapper div.left,section.part6 div.wrapper div.mid,section.part6 div.wrapper div.right{
+    width: 33%;
+}
+section.part6 div.wrapper div.left img,section.part6 div.wrapper div.right img{
+    width: 100%;
+    height: 100%;
+}
+section.part6 div.wrapper div.left{
+    background-image: url("/assets/clothing2-wrapbg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.part6 div.wrapper div.right{
+    background-image: url("/assets/clothing2-wrapbg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.part6 div.wrapper div.mid{
+    background-color: hsl(40.91deg 64.71% 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+section.part6 div.wrapper div.mid span{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+section.part6 div.wrapper div.mid p{
+    color: #666;
+}
+section.part6 div.wrapper div.mid a{
+    text-decoration: none;
+}
+section.part6 div.wrapper div.mid div.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 12px 30px 12px 30px;
+}
+section.part6 div.wrapper div.mid div.btn button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+section.part6 div.wrapper div.mid div.btn:hover{
+    transform: scale(110%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+section.part6 div.wrapper div.mid div.btn img{
+    filter: invert(1);
+}
+section.footer{
+    background-color: #f7eae6;
+    margin-top: 100px;
+}
+section.footer div.wrapper{
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+}
+section.footer div.wrapper a{
+    text-decoration: none;
+    color: #666;
+}
+section.footer div.wrapper div.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+section.footer div.wrapper div.contacts,section.footer div.wrapper div.ul1,section.footer div.wrapper div.ul2,section.footer div.wrapper div.ul3{
+    width: 25%;
+}
+section.footer div.wrapper div.contacts div.logo img{
+    width: 150px;
+}
+section.footer div.wrapper div.contacts div.mobile{
+    display: flex;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 200;
+}
+section.footer div.wrapper div.contacts div.mail{
+    display: flex;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 200;
+}
+section.footer div.wrapper div.contacts div.images{
+    margin-top: 15px;
+}
+section.footer div.wrapper div.contacts div.images img{
+    width: 220px;
+    margin-left: 10px;
+}
+section.footer div.wrapper div.ul1,section.footer div.wrapper div.ul3{
+    margin-top: 50px;
+}
+section.footer div.wrapper div.ul1 ul,section.footer div.wrapper div.ul2 ul,section.footer div.wrapper div.ul3 ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+section.footer div.wrapper div.ul1 ul strong,section.footer div.wrapper div.ul2 ul strong,section.footer div.wrapper div.ul3 ul strong{
+    font-size: 18px;
+}
+section.footer div.wrapper div.ul2{
+    margin-top: 40px;
+}
+section.footer div.line{
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    margin-top: 100px;
+}
+section.footer div.bottom-wrapper{
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+section.footer div.bottom-wrapper div.copywright p{
+    color: #666;
+    margin-bottom: 30px;
+}
+section.footer div.bottom-wrapper div.policies{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+section.footer div.bottom-wrapper div.policies a{
+    text-decoration: none;
+    color: #666;
+}
+
+/* About-us's CSS */
+
+section.heading{
+    height: 390px;
+    background-image: url("/assets/clothing2-subheader1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section.heading div.separatenavbar{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 480px;
+    background-color: white;
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+section.heading div.separatenavbar div.img{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+}
+section.heading div.separatenavbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px ;
+    font-weight: 300;
+}
+section.heading div.separatenavbar button{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+section.heading div.header{
+    background-color: white;
+    width: 1050px;
+    height: 90px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 70px;
+    position: relative;
+}
+section.heading div.header div.hamburger{
+    display: none;
+}
+section.heading div.header div.left-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+section.heading div.header div.logo img{
+   width: 150px;
+}
+section.heading div.header div.navbar{
+    display: flex;
+    gap: 30px;
+}
+section.heading div.navbar a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px ;
+    font-weight: 300;
+}
+section.heading div.navbar a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: 120%;
+    height: 1px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+section.heading div.navbar a:hover::after{
+    transform: scaleX(1);
+}
+section.heading div.header div.buy button{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+section.heading div.header div.right-header{
+    display: flex;
+    gap: 20px;
+}
+section.heading div.header div.icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+section.heading div.header div.icons img:nth-child(1){
+    width: 25px;
+}
+section.heading div.header div.right-header div.btn{
+    display: flex;
+    align-items: center;
+}
+section.heading div.header div.right-header div.btn button{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+section.heading div.title{
+    margin-left: 250px;
+    margin-bottom: 60px;
+}
+section.heading div.title h1{
+    font-size: 70px;
+    font-weight: 200;
+}
+section.aboutus-part1 div.wrapper{
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+section.aboutus-part1 div.wrapper div.top{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.aboutus-part1 div.wrapper div.top span{
+    font-size: 65px;
+    width: 65%;
+    font-weight: 200;
+    line-height: 60px;
+}
+section.aboutus-part1 div.wrapper div.top p{
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+section.aboutus-part1 div.wrapper div.bottom{
+    display: flex;
+}
+section.aboutus-part1 div.wrapper div.bottom div.contents{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+section.aboutus-part1 div.wrapper div.bottom div.image{
+    width: 60%;
+}
+section.aboutus-part1 div.wrapper div.bottom div.image img{
+    width: 100%;
+}
+section.aboutus-part1 div.wrapper div.bottom div.contents div.content1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.aboutus-part1 div.wrapper div.bottom div.contents div.content1 span{
+    font-size: 23px;
+    font-weight: 200;
+}
+section.aboutus-part1 div.wrapper div.bottom div.contents div.content1 p{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    width: 85%;
+}
+section.aboutus-part1 div.wrapper div.bottom div.contents div.content2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.aboutus-part1 div.wrapper div.bottom div.contents div.content2 h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+section.aboutus-part1 div.wrapper div.bottom div.contents div.content2 span{
+     font-size: 20px;
+     font-weight: 200;
+     width: 70%;
+     line-height: 30px;
+}
+section.aboutus-part1 div.wrapper div.bottom div.contents div.content2 p{
+    font-size: 16px;
+    font-weight: 200;
+    width: 70%;
+    line-height: 23px;
+}
+section.aboutus-part2{
+    background-color: #f7eae6;
+}
+section.aboutus-part2 div.wrapper{
+    width: 1050px;
+    margin: 0px auto;
+}
+section.aboutus-part2 div.wrapper ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+section.aboutus-part2 div.wrapper ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+section.aboutus-part2 div.wrapper ul li span{
+    font-size: 60px;
+    font-weight: 500;
+}
+section.aboutus-part2 div.wrapper ul li p{
+    font-weight: 300;
+}
+section.aboutus-part3 div.wrapper{
+    width: 1050px;
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    gap: 30px;
+}
+section.aboutus-part3 div.wrapper div.left,section.aboutus-part3 div.wrapper div.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section.aboutus-part3 div.wrapper div.right div.image img{
+    width: 100%;
+}
+section.aboutus-part3 div.wrapper div.left div.image img{
+    width: 100%;
+}
+section.aboutus-part3 div.wrapper div.left div.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.aboutus-part3 div.wrapper div.left div.content span{
+    font-weight: 300;
+}
+section.aboutus-part3 div.wrapper div.left div.content h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+section.aboutus-part3 div.wrapper div.left div.content span:nth-child(3){
+    line-height: 27px;
+    font-size: 19px;
+    width: 98%;
+    font-weight: 200;
+}
+section.aboutus-part3 div.wrapper div.left div.content p{
+    font-weight: 300;
+    line-height: 25px;
+}
+section.aboutus-part3 div.wrapper div.left div.content div.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: black;
+    padding: 12px 30px 12px 30px;
+    margin-top: 20px;
+}
+section.aboutus-part3 div.wrapper div.left div.content a{
+    text-decoration: none;
+}
+section.aboutus-part3 div.wrapper div.left div.content div.btn:hover{
+    transform: scale(110%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+section.aboutus-part3 div.wrapper div.left div.content div.btn button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+section.aboutus-part3 div.wrapper div.left div.content div.btn img{
+    filter: invert(1);
+}
+section.aboutus-part3 div.wrapper div.right div.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.aboutus-part3 div.wrapper div.right div.content span{
+    font-weight: 300;
+}
+section.aboutus-part3 div.wrapper div.right div.content h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+section.aboutus-part3 div.wrapper div.right div.content span:nth-child(3){
+    line-height: 27px;
+    font-size: 19px;
+    font-weight: 200;
+}
+section.aboutus-part3 div.wrapper div.right div.content p{
+    font-weight: 300;
+    line-height: 25px;
+}
+
+/* Shop's CSS */
+
+section.shop-part1{
+    background-color: white;
+    margin-top: 60px;
+}
+section.shop-part1 b{
+    font-weight: 500;
+    color: gray;
+}
+section.shop-part1 div.wrapper{
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+section.shop-part1 div.wrapper div.top-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+section.shop-part1 div.wrapper div.top-lists ul{
+    display: flex;
+    gap: 30px;
+}
+section.shop-part1 div.wrapper div.top-lists ul li{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 23%;
+    height: 330px;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+section.shop-part1 div.wrapper div.top-lists ul li div.star{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    background-color: black;
+    width: 130px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transform: rotate(140deg);
+}
+section.shop-part1 div.wrapper div.top-lists ul li div.star img{
+    width: 20px;
+    margin-left: 33px;
+    margin-top: 8px;
+}
+section.shop-part1 div.wrapper div.top-lists ul li span{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 200;
+}
+section.shop-part1 div.wrapper div.top-lists ul li p{
+    font-size: 18px;
+    padding-left: 15px;
+}
+section.shop-part1 div.wrapper div.top-lists ul li div.costs{
+    display: flex;
+    gap: 5px;
+}
+section.shop-part1 div.wrapper div.top-lists ul li div.costs p{
+    text-decoration: line-through;
+    color: #666;
+}
+section.shop-part1 div.wrapper div.top-lists ul li div.costs strong{
+    font-size: 18px;
+    text-decoration: underline;
+}
+section.shop-part1 div.wrapper div.mid-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+section.shop-part1 div.wrapper div.mid-lists ul{
+    display: flex;
+    gap: 30px;
+}
+section.shop-part1 div.wrapper div.mid-lists ul li{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 23%;
+    height: 330px;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+section.shop-part1 div.wrapper div.mid-lists ul li span{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 200;
+}
+section.shop-part1 div.wrapper div.mid-lists ul li p{
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+section.shop-part1 div.wrapper div.bottom-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+section.shop-part1 div.wrapper div.bottom-lists ul{
+    display: flex;
+    gap: 30px;
+}
+section.shop-part1 div.wrapper div.bottom-lists ul li{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 23%;
+    height: 330px;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+section.shop-part1 div.wrapper div.bottom-lists ul li div.star{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    background-color: black;
+    width: 130px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transform: rotate(140deg);
+}
+section.shop-part1 div.wrapper div.bottom-lists ul li div.star img{
+    width: 20px;
+    margin-left: 33px;
+    margin-top: 8px;
+}
+section.shop-part1 div.wrapper div.bottom-lists ul li span{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 200;
+}
+section.shop-part1 div.wrapper div.bottom-lists ul li p{
+    font-size: 18px;
+    padding-left: 15px;
+}
+section.shop-part1 div.wrapper div.bottom-lists ul li div.costs{
+    display: flex;
+    gap: 5px;
+}
+section.shop-part1 div.wrapper div.bottom-lists ul li div.costs p{
+    text-decoration: line-through;
+    color: #666;
+}
+section.shop-part1 div.wrapper div.bottom-lists ul li div.costs strong{
+    font-size: 18px;
+    text-decoration: underline;
+}
+section.shop-part1 div.wrapper ul li img:hover{
+    transform: scale(110%);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+/* Contact-us's CSS*/
+
+section.contact-part1{
+    margin-top: 80px;
+}
+section.contact-part1 div.wrapper{
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+section.contact-part1 div.wrapper div.content{
+    display: flex;
+}
+section.contact-part1 div.wrapper div.content div.left{
+    width: 45%;
+}
+section.contact-part1 div.wrapper div.content div.left p{
+    font-size: 15px;
+    font-weight: 200;
+}
+section.contact-part1 div.wrapper div.content div.left span{
+    font-size: 40px;
+    font-weight: 300;
+}
+section.contact-part1 div.wrapper div.content div.right{
+    display: flex;
+    gap: 120px;
+    width: 55%;
+    justify-content: end;
+}
+section.contact-part1 div.wrapper div.content div.right div.time{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+section.contact-part1 div.wrapper div.content div.right div.time div.line{
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: black;
+    top: 70px;
+}
+section.contact-part1 div.wrapper div.content div.right div.time div.time1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+section.contact-part1 div.wrapper div.content div.right div.time div.time2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+section.contact-part1 div.wrapper div.content div.right div.time div.time1 p{
+    font-size: 18px;
+    font-weight: 200;
+}
+section.contact-part1 div.wrapper div.content div.right div.time div.time1 span{
+    font-size: 20px;
+    font-weight: 200;
+}
+section.contact-part1 div.wrapper div.content div.right div.time div.time1 span sup{
+    font-size: 10px;
+}
+section.contact-part1 div.wrapper div.content div.right div.time div.time2 p{
+    font-size: 18px;
+    font-weight: 200;
+}
+section.contact-part1 div.wrapper div.content div.right div.time div.time2 span{
+    font-size: 20px;
+    font-weight: 200;
+}
+section.contact-part1 div.wrapper div.content div.right div.time div.time2 span sup{
+    font-size: 10px;
+}
+section.contact-part1 div.wrapper div.content div.right div.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+section.contact-part1 div.wrapper div.content div.right div.questions div.mobile{
+    display: flex;
+    gap: 2px;
+}
+section.contact-part1 div.wrapper div.content div.right div.questions div.mail{
+    display: flex;
+    gap: 2px;
+}
+section.contact-part1 div.wrapper div.content div.right div.questions p{
+    font-size: 18px;
+    font-weight: 200;
+}
+section.contact-part2{
+    background-color: hsl(14.12deg 51.52% 93.53%);
+}
+section.contact-part2 div.wrapper{
+    width: 650px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+section.contact-part2 div.wrapper span{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+section.contact-part2 div.wrapper div.names{
+    display: flex;
+    gap: 10px;
+}
+section.contact-part2 div.wrapper div.names input{
+    width: 50%;
+    border: none;
+    padding: 15px 30px 15px 10px;
+    outline: none;
+    font-size: 15px;
+}
+section.contact-part2 div.wrapper div.messages{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} 
+section.contact-part2 div.wrapper div.messages input{
+    border: none;
+    padding: 15px 30px 15px 10px;
+    outline: none;
+    font-size: 15px;
+}
+section.contact-part2 div.wrapper div.messages textarea{
+    border: none;
+    padding: 10px 0 0 5px;
+    outline: none;
+    font-size: 15px;
+}
+section.contact-part2 div.wrapper div.messages button:hover{
+    transform: scale(95%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: coral;
+}
+section.contact-part2 div.wrapper div.messages button{
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+/* Login Inteface's CSS */
+
+section.heading div.login{
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section.heading div.login div.top{
+    display: flex;
+    justify-content: space-between;
+}
+section.heading div.login div.top span{
+    font-size: 20px;
+}
+section.heading div.login div.top img{
+    cursor: pointer;
+}
+section.heading div.login div.top img:hover{
+    background-color: #eaf1f5;
+    border-radius: 50%;
+}
+section.heading div.login div.input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+section.heading div.login div.input input{
+    background-color: #eaf1f5;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+section.heading div.login div.btn{
+    margin: 0px auto;
+    display: flex;
+    gap: 10px;
+}
+section.heading div.login div.btn button{
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    font-size: 15px;
+}
+section.heading div.login div.btn button:hover{
+    color: blue;
+    border: blue 1px solid;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Customer Details Interface's CSS */
+
+section.heading div.cust-details{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section.heading div.cust-details ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 600px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+section.heading div.cust-details div.top{
+    display: flex;
+    justify-content: space-between;
+}
+section.heading div.cust-details div.top span{
+    font-size: 20px;
+}
+section.heading div.cust-details div.top img{
+    cursor: pointer;
+}
+section.heading div.cust-details div.top img:hover{
+    background-color: #eaf1f5;
+    border-radius: 50%;
+}
+section.heading div.cust-details ul li{
+    display: flex;
+    align-items: center;
+    background-color: #eaf1f5;
+    gap: 5px;
+    padding: 5px;
+}
+section.heading div.cust-details ul li div.info{
+    display: flex;
+    flex-direction: column;
+}
+section.heading div.cust-details ul li div.del{
+    display: none;
+}
+section.heading div.cust-details ul li:hover div.del{
+    display: block;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+

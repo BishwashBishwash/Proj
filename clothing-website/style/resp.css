@@ -1,0 +1,951 @@
+html,body{
+    overflow-x: hidden !important;
+}
+
+/* Home's Responsive */
+
+@media(max-width:1171px){
+    body{
+        width: 90%;
+        margin: 0px auto;
+    }
+    section.part1{
+        height: auto;
+        overflow-y: hidden;
+    }
+    section.part1 div.container{
+        margin-bottom: 70px;
+    }
+    section.part1 div.header{
+        width: auto;
+        height: auto;
+    }
+    section.part1 div.container div.images div.top-image{
+        top: -50px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img1{
+        bottom: 25px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img2{
+        top: -75px;
+    }
+    section.part1 div.container div.images div.top-image img{
+        width: 150px;
+    }
+    section.part1 div.container div.images div.bottom-images img{
+        width: 180px;
+    }
+    section.part1 div.spring{
+        gap: 5px;
+        left: 7%;
+    }
+    section.part1 div.spring div.mid div.words p{
+        font-size: 65px;
+    }
+    section.part2,section.part3{
+        height: auto;
+    }
+    section.part2 div.wrapper div.bottom div.btn,section.part3 div.wrapper div.bottom div.btn{
+        margin-bottom: 50px;
+    }
+    section.part2 div.wrapper,section.part3 div.wrapper,section.part4 div.wrapper{
+        width: 95%;
+    }
+    section.part2 div.wrapper div.top{
+        margin-top: 50px;
+    }
+    section.part2 div.wrapper div.bottom ul li{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media(max-width:1025px){
+    section.part1 div.header div.navbar a{
+        font-size: 15px;
+    }
+    section.part1 div.header div.buy button{
+        font-size: 15px;
+    }
+    section.part1 div.header div.right-header div.btn button{
+        font-size: 15px;
+    }
+    section.part1 div.container div.images div.top-image img{
+        width: 130px;
+    }
+    section.part1 div.container div.images div.bottom-images img{
+        width: 150px;
+    }
+    section.part1 div.spring{
+        left: 5%;
+    }
+    section.part1 div.spring div.mid{
+        gap: 30px;
+    }
+    section.part1 div.spring div.top span{
+        font-size: 35px;
+    }
+    section.part1 div.spring div.mid div.words p{
+        font-size: 55px;
+    }
+    section.part1 div.spring div.mid div.imgs{
+        left: 5px;
+    }
+    section.part1 div.spring div.bottom p{
+        font-size: 20px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img1 p{
+        font-size: 25px;
+        bottom: 30px;
+        left: 10px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img2 p{
+        font-size: 25px;
+        bottom: 30px;
+        left: 10px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img1 div.line{
+        bottom: 30px;
+        left: 10px;
+        width: 90px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img2 div.line{
+        bottom: 30px;
+        left: 10px;
+        width: 50px;
+    }
+    section.part1 div.spring div.mid img{
+        width: 45px;
+    }
+    section.part2{
+        height: auto;
+    }
+    section.part2 div.wrapper div.bottom div.btn{
+        margin-bottom: 50px;
+    }
+    section.part2 div.wrapper div.top div.right div.line{
+        width: 450px;
+    }
+    section.part2 div.wrapper div.top div.left h1{
+        font-size: 60px;
+    }
+    section.part2 div.wrapper div.bottom ul{
+        gap: 5px;
+    }
+    section.part2 div.wrapper div.bottom ul li{
+        height: auto;
+        width: auto;
+    }
+    section.part2 div.wrapper div.bottom ul li p{
+        margin-bottom: 5px;
+    }
+    section.part3{
+        height: auto;
+    }
+    section.part3 div.wrapper div.bottom div.btn{
+        margin-bottom: 50px;
+    }
+    section.part3 div.wrapper div.top div.right div.line{
+        width: 450px;
+    }
+    section.part3 div.wrapper div.top div.left h1{
+        font-size: 60px;
+    }
+    section.part3 div.wrapper div.bottom ul{
+        gap: 5px;
+    }
+    section.part3 div.wrapper div.bottom ul li{
+        height: auto;
+        width: auto;
+    }
+    section.part3 div.wrapper div.bottom ul li p{
+        margin-bottom: 5px;
+    }
+    section.part4{
+        height: auto;
+    }
+    section.part4 div.wrapper div.contents{
+        margin-bottom: 50px;
+    }
+    section.part4 div.wrapper div.header h1{
+        margin-top: 50px;
+    }
+    section.part4 div.wrapper div.contents div.story h4{
+        font-size: 25px;
+    }
+    section.part4 div.wrapper div.contents div.story span{
+        font-size: 18px;
+    }
+    section.part4 div.wrapper div.contents div.story div.btn{
+        margin-top: 30px;
+    }
+    section.part5{
+        width: auto;
+    }
+    section.part5 ul{
+        gap: 15px;
+    }
+    section.part5 ul li span{
+        font-size: 18px;
+    }
+    section.part5 ul li p{
+        font-size: 15px;
+    }
+    section.part6 div.wrapper{
+        width: auto;
+    }
+    section.footer div.wrapper{
+        width: 95%;
+    }
+    section.footer div.wrapper div.contacts div.mobile,section.footer div.wrapper div.contacts div.mail{
+        font-size: 16px;
+        margin-left: 0;
+    }
+    section.footer div.wrapper div.contacts div.images img{
+        width: 200px;
+        margin-left: 0;
+    }
+    section.footer div.bottom-wrapper{
+        width: 95%;
+    }
+    section.footer div.bottom-wrapper div.copywright p,section.footer div.bottom-wrapper div.policies a{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:981px){
+    section.part1 div.header{
+        gap: 35px;
+    }
+    section.part2{
+        height: auto;
+    }
+    section.part2 div.wrapper div.top{
+        margin-top: 50px;
+    }
+    section.part2 div.wrapper div.top div.right div.line{
+        width: 400px;
+    }
+    section.part2 div.wrapper div.top div.left h1{
+        font-size: 50px;
+    }
+    section.part2 div.wrapper div.bottom ul{
+        gap: 5px;
+    }
+    section.part3{
+        height: auto;
+    }
+    section.part3 div.wrapper div.top{
+        margin-top: 50px;
+    }
+    section.part3 div.wrapper div.top div.right div.line{
+        width: 400px;
+    }
+    section.part3 div.wrapper div.top div.left h1{
+        font-size: 50px;
+    }
+    section.part4{
+        height: auto;
+    }
+    section.part4 div.wrapper{
+        gap: 40px;
+    }
+    section.part4 div.wrapper div.header h1{
+        margin-top: 50px;
+    }
+    section.part4 div.wrapper div.contents{
+        margin-bottom: 70px;
+    }
+    section.part4 div.wrapper div.contents div.story div.btn{
+        padding: 10px 25px 10px 25px;
+    }
+    section.part4 div.wrapper div.contents div.story div.btn button{
+        font-size: 16px;
+    }
+    section.part6 div.wrapper div.mid span{
+        font-size: 27px;
+    }
+    section.part6 div.wrapper div.mid div.btn{
+        padding: 10px 25px 10px 25px;
+    }
+    section.part6 div.wrapper div.mid div.btn button{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:769px){
+    section.part1 div.header div.navbar,section.part1 div.header div.buy,section.part1 div.header div.right-header div.btn{
+        display: none;
+    }
+
+    section.part1 div.header div.hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    section.part1 div.header{
+        justify-content: space-between;
+        height: 70px;
+    }
+    section.part1 div.header div.logo img{
+        width: 150px;
+     }
+     section.part1 div.header div.right-header{
+        gap: 15px;
+    }
+    section.part1 div.header div.icons img:nth-child(1){
+        width: 20px;
+    }
+    section.part1 div.header div.right-header div.btn button{
+        font-size: 13px;
+    }
+    section.part1 div.header div.buy button{
+        font-size: 13px;
+    }
+    section.part1 div.container div.images div.top-image{
+        top: -60px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img1{
+        bottom: 35px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img2{
+        top: -90px;
+    }
+    section.part1 div.container div.images div.bottom-images{
+        gap: 15px;
+        margin-right: 20px;
+    }
+    section.part1 div.container div.images div.top-image img{
+        width: 100px;
+    }
+    section.part1 div.container div.images div.bottom-images img{
+        width: 110px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img1 p{
+        font-size: 18px;
+        bottom: 15px;
+        left: 5px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img2 p{
+        font-size: 18px;
+        bottom: 15px;
+        left: 5px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img1 div.line{
+        bottom: 15px;
+        left: 5px;
+        width: 65px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img2 div.line{
+        bottom: 15px;
+        left: 5px;
+        width: 35px;
+    }
+    section.part1 div.spring div.mid{
+        gap: 15px;
+    }
+    section.part1 div.spring div.top{
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+    section.part1 div.spring div.top span{
+        font-size: 20px;
+    }
+    section.part1 div.spring div.mid div.words p{
+        font-size: 40px;
+    }
+    section.part1 div.spring div.mid div.imgs img{
+        width: 30px;
+    }
+    section.part1 div.spring div.mid div.imgs{
+        left: 10px;
+    }
+    section.part1 div.spring div.bottom{
+        left: 40px;
+        gap: 20px;
+    }
+    section.part1 div.spring div.bottom p{
+        font-size: 15px;
+    }
+    section.part1 div.spring div.bottom button{
+        font-size: 13px;
+        padding: 10px;
+    }
+    section.part2 div.wrapper div.top, section.part3 div.wrapper div.top{
+        margin-top: 50px;
+    }
+    section.part2 div.wrapper div.top div.right div.line, section.part3 div.wrapper div.top div.right div.line{
+        width: 300px;
+    }
+    section.part2 div.wrapper div.top div.left h1,section.part3 div.wrapper div.top div.left h1{
+        font-size: 40px;
+    }
+    section.part2 div.wrapper div.bottom ul lisection.part3 div.wrapper div.bottom ul li{
+        width: 45%;
+    }
+    section.part2 div.wrapper div.bottom ul,section.part3 div.wrapper div.bottom ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    section.part2 div.wrapper div.bottom,section.part3 div.wrapper div.bottom{
+        margin-bottom: 40px;
+    }
+    section.part4 div.wrapper div.header h1{
+        font-size: 50px;
+    } 
+    section.part4 div.wrapper div.contents{
+        height: auto;
+    }
+    section.part4 div.wrapper div.contents div.story{
+        padding: 10px;
+    }
+    section.part4 div.wrapper div.contents div.story div.btn{
+        margin-top: 20px;
+    }
+    section.part5{
+        margin-top: 50px;
+    }
+    section.part5 ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    section.part6 div.wrapper div.mid span{
+        font-size: 20px;
+    }
+    section.part6 div.wrapper div.mid p{
+        font-size: 13px;
+    }
+    section.part6 div.wrapper div.mid div.btn{
+        padding: 8px 20px 8px 20px;
+    }
+    section.part6 div.wrapper div.mid div.btn button{
+        font-size: 15px;
+    }
+    section.footer div.wrapper div.contacts div.logo img{
+        width: 110px;
+    }
+    section.footer div.wrapper div.contacts div.mobile img,section.footer div.wrapper div.contacts div.mail img{
+        width: 15px;
+    }
+    section.footer div.wrapper div.contacts div.images img{
+        width: 150px;
+    }
+    section.footer div.wrapper div.contacts{
+        align-items: center;
+    }
+    section.footer div.wrapper{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    section.footer div.bottom-wrapper{
+        flex-direction: column;
+    }
+    section.footer div.line{
+        margin-top: 50px;
+    }
+    section.footer div.wrapper div.ul1,section.footer div.wrapper div.ul2,section.footer div.wrapper div.ul3{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+@media(max-width:681px){
+    section.part1 div.header div.logo img{
+        width: 150px;
+    }
+    section.part1 div.container div.spring{
+        left: 0;
+    }
+    section.part2 div.wrapper div.bottom ul li{
+        width: 50%;
+    }
+    section.part3 div.wrapper div.bottom ul li{
+        width: 50%;
+    }
+    section.part4 div.wrapper div.contents{
+        flex-direction: column;
+    }
+    section.part4 div.wrapper div.contents div.image, section.part4 div.wrapper div.contents div.story{
+        width: 100%;
+        height: 400px;
+    }
+    section.part5 ul{
+        flex-direction: column;
+        gap: 30px;
+    }
+    section.part6 div.wrapper{
+        flex-direction: column;
+        align-items: center;
+        height: 160vh;  
+        width: auto;
+        margin: 0px auto;
+    }
+    section.part6{
+        margin-top: 50px;
+    }
+    section.part6 div.wrapper div.mid{
+        height: 300px;
+        width: 100%;
+    }
+    section.part6 div.wrapper div.left,section.part6 div.wrapper div.right{
+        height: 500px;
+        width: 100%;
+        background-position: center;
+    }
+    section.part6 div.wrapper div.mid span{
+        font-size: 35px;
+    }
+    section.part6 div.wrapper div.mid p{
+        font-size: 20px;
+    }
+    section.part6 div.wrapper div.mid div.btn{
+        padding: 12px 30px 12px 30px;
+    }
+    section.part6 div.wrapper div.mid div.btn button{
+        font-size: 18px;
+    }
+    section.footer{
+        margin-top: 10px;
+    }
+    section.footer div.bottom-wrapper div.policies a{
+        font-size: 15px;
+    }
+    section.footer div.bottom-wrapper div.copywright p{
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+}
+
+ @media(max-width:426px){
+    section.part1 div.spring{
+        margin-top: 50px;
+    }
+    section.part1 div.container{
+        margin-bottom: 220px;
+    }
+    section.part1 div.container div.images div.top-image{
+        top: -10px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img1{
+        bottom: 0px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img2{
+        top: -30px;
+    }
+    section.part1 div.container div.images div.bottom-images{
+        gap: 15px;
+        margin-right: 20px;
+    }
+    section.part1 div.container div.images div.top-image img{
+        width: 80px;
+    }
+    section.part1 div.container div.images div.bottom-images img{
+        width: 90px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img1 p{
+        font-size: 15px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img2 p{
+        font-size: 15px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img1 div.line{
+        width: 55px;
+    }
+    section.part1 div.container div.images div.bottom-images div.img2 div.line{
+        width: 30px;
+    }
+    section.part1 div.spring div.top div.line{
+        width: 70px;
+    }
+    section.part1 div.spring div.mid{
+        gap: 10px;
+    }
+    section.part1 div.spring div.top{
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+    section.part1 div.spring div.top span{
+        font-size: 16px;
+    }
+    section.part1 div.spring div.mid div.words p{
+        font-size: 30px;
+    }
+    section.part1 div.spring div.mid div.imgs img{
+        width: 25px;
+    }
+    section.part1 div.spring div.bottom p{
+        font-size: 13px;
+    }
+    section.part1 div.spring div.bottom button{
+        padding: 8px;
+    }
+    section.part2 div.wrapper div.top div.left span{
+        font-size: 20px;
+    }
+    section.part2 div.wrapper div.top div.left h1{
+        font-size: 25px;
+    }
+    section.part2 div.wrapper div.top div.right div.line{
+        width: 170px;
+    }
+    section.part2 div.wrapper div.bottom ul li{
+        width: auto;
+    }
+    section.part3 div.wrapper div.top div.left span{
+        font-size: 20px;
+    }
+    section.part3 div.wrapper div.top div.left h1{
+        font-size: 25px;
+    }
+    section.part3 div.wrapper div.top div.right div.line{
+        width: 170px;
+    }
+    section.part3 div.wrapper div.bottom ul li{
+        width: auto;
+    }
+    section.part4 div.wrapper div.header h1{
+        font-size: 40px;
+    }
+    section.part4 div.wrapper div.contents div.story span{
+        font-size: 15px;
+    }
+    section.part4 div.wrapper div.contents div.story p{
+        line-height: 20px;
+    }
+    section.footer div.wrapper div.contacts,section.footer div.wrapper div.ul1,section.footer div.wrapper div.ul2,section.footer div.wrapper div.ul3{
+        width: auto;
+    }
+    section.footer div.bottom-wrapper{
+        flex-direction: column;
+    }
+    section.footer div.bottom-wrapper div.copywright p{
+        text-align: center;
+    }
+} 
+
+@media(max-width:376px){
+    section.footer div.wrapper div.contacts,section.footer div.wrapper div.ul1,section.footer div.wrapper div.ul2,section.footer div.wrapper div.ul3{
+        width: auto;
+    }
+    section.part2 div.wrapper div.top div.left h1{
+        font-size: 23px;
+    }
+    section.part2 div.wrapper div.top div.left span{
+        font-size: 18px;
+    }
+    section.part2 div.wrapper div.top div.right div.line{
+        width: 150px;
+    }
+    section.part3 div.wrapper div.top div.left h1{
+        font-size: 23px;
+    }
+    section.part3 div.wrapper div.top div.left span{
+        font-size: 18px;
+    }
+    section.part3 div.wrapper div.top div.right div.line{
+        width: 150px;
+    }
+    section.part6 div.wrapper{
+        height: auto;
+    }
+    section.footer div.bottom-wrapper div.copywright p,section.footer div.bottom-wrapper div.policies a{
+        font-size: 13px;
+    }
+}
+
+/* About-us's Responsive */
+
+@media(max-width:1171px){
+    body{
+        width: 90%;
+        margin: 0px auto;
+    }
+    section.heading div.header{
+        width: auto;
+    }
+}
+
+@media(max-width:1025px){
+    section.heading div.header{
+        gap: 50px;
+    }
+    section.heading div.header div.navbar a,section.heading div.header div.left-header div.buy button,section.heading div.header div.right-header div.btn button{
+        font-size: 15px;
+    }
+    section.heading div.title{
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+    section.aboutus-part1 div.wrapper{
+        width: auto;
+    }
+    section.aboutus-part1 div.wrapper div.top span{
+        width: 70%;
+    }
+    section.aboutus-part2 div.wrapper{
+        width: auto;
+    }
+    section.aboutus-part3 div.wrapper{
+        width: auto;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content div.btn{
+       width: 50%;
+    }
+}
+
+@media(max-width:981px){
+    section.aboutus-part1 div.wrapper div.top span{
+        font-size: 60px;
+    }
+    section.aboutus-part1 div.wrapper div.bottom div.contents,section.aboutus-part1 div.wrapper div.bottom div.image{
+        width: 50%;
+    }
+    section.aboutus-part1 div.wrapper div.bottom div.contents div.content2 p,section.aboutus-part1 div.wrapper div.bottom div.contents div.content2 span,section.aboutus-part1 div.wrapper div.bottom div.contents div.content1 p{
+        width: auto;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content p,section.aboutus-part3 div.wrapper div.right div.content p{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:769px){
+    section.heading{
+        width: auto;
+        background-position: center;
+    }
+    section.heading div.header div.navbar,section.heading div.header div.buy,section.heading div.header div.right-header{
+        display: none;
+    }
+    section.heading div.login{
+        width: auto;
+    }
+    section.heading div.cust-details{
+        width: auto;
+    }
+    section.heading div.header{
+        justify-content: space-between;
+        width: 100%;
+    }
+    section.heading div.header div.hamburger{
+        display: block;
+    }
+    section.heading div.header div.hamburger img{
+        filter: invert(1);
+    }
+    section.heading div.header div.left-header div.logo img{
+        width: 160px;
+    }
+    section.heading div.title{
+        margin-left: 150px;
+    }
+    section.heading div.title h1{
+        font-size: 60px;
+    }
+    section.aboutus-part1 div.wrapper div.top{
+        margin-top: 50px;
+    }
+    section.aboutus-part1 div.wrapper div.top span{
+        font-size: 50px;
+        width: auto;
+    }
+    section.aboutus-part1 div.wrapper{
+        margin-bottom: 50px;
+    }
+    section.aboutus-part1 div.wrapper div.bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+    section.aboutus-part1 div.wrapper div.bottom div.contents,section.aboutus-part1 div.wrapper div.bottom div.image{
+        width: auto;
+    }
+    section.aboutus-part1 div.wrapper div.bottom div.contents div.content2 p{
+        font-weight: 300;
+    }
+    section.aboutus-part2 div.wrapper ul{
+        gap: 20px;
+    }
+    section.aboutus-part2 div.wrapper ul li span{
+        font-size: 50px;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content h3,section.aboutus-part3 div.wrapper div.right div.content h3{
+        font-size: 25px;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content p,section.aboutus-part3 div.wrapper div.right div.content p{
+        font-size: 15px;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content span:nth-child(3),section.aboutus-part3 div.wrapper div.right div.content span:nth-child(3){
+        font-size: 16px;
+        line-height: 25px;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content div.btn{
+        width: 80%;
+    }
+}
+
+@media(max-width:681px){
+    
+    section.heading div.title{
+        margin-left: 50px;
+    }
+    section.aboutus-part1 div.wrapper div.top span{
+        font-size: 40px;
+    }
+    section.aboutus-part3 div.wrapper{
+        flex-direction: column;
+    }
+    section.aboutus-part3 div.wrapper div.left,section.aboutus-part3 div.wrapper div.right{
+        width: auto;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content div.btn{
+        width: 40%;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content span:nth-child(3),section.aboutus-part3 div.wrapper div.right div.content span:nth-child(3){
+        font-size: 18px;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content h3,section.aboutus-part3 div.wrapper div.right div.content h3{
+        font-size: 30px;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content p,section.aboutus-part3 div.wrapper div.right div.content p{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:426px){
+     section.heading div.title{
+        margin-left: 10px;
+     }
+     section.heading div.title h1{
+        font-size: 45px;
+     }
+     section.aboutus-part1 div.wrapper div.top span{
+        font-size: 35px;
+    }
+    section.aboutus-part2 div.wrapper ul{
+        justify-content: center;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+    section.aboutus-part2 div.wrapper ul li{
+        width: 40%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    section.aboutus-part3 div.wrapper div.left div.content div.btn{
+        width: 60%;
+    }
+}
+
+/* Shop's Responsive */
+
+@media(max-width:1171px){
+    section.shop-part1 div.wrapper{
+        width: auto;
+    }
+    section.shop-part1 div.wrapper div.top-lists ul,section.shop-part1 div.wrapper div.mid-lists ul,section.shop-part1 div.wrapper div.bottom-lists ul{
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+@media(max-width:769px){
+    section.shop-part1 div.wrapper div.top-lists ul li,section.shop-part1 div.wrapper div.mid-lists ul li,section.shop-part1 div.wrapper div.bottom-lists ul li{
+        width: 45%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    section.shop-part1 div.wrapper div.top-lists ul,section.shop-part1 div.wrapper div.mid-lists ul,section.shop-part1 div.wrapper div.bottom-lists ul{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media(max-width:681px){
+    section.shop-part1 div.wrapper div.top-lists ul li,section.shop-part1 div.wrapper div.mid-lists ul li,section.shop-part1 div.wrapper div.bottom-lists ul li{
+        width: auto;
+    }
+}
+
+@media(max-width:426px){
+    section.shop-part1 b{
+        text-align: center;
+    }
+}
+
+/* Contact-us's Responsive */
+
+@media(max-width:1025px){
+    section.contact-part1 div.wrapper{
+        width: auto;
+    }
+    #h1{
+        font-size: 60px;
+    }
+    section.contact-part1 div.wrapper div.image img{
+        width: 100%;
+    }
+    section.contact-part1 div.wrapper div.content div.left span{
+        font-size: 35px;
+    }
+}
+
+@media(max-width:769px){
+    #h1{
+        font-size: 50px;
+    }
+    section.contact-part1 div.wrapper div.content{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    section.contact-part1 div.wrapper div.content div.left{
+        text-align: center;
+        width: 60%;
+    }
+    section.contact-part1 div.wrapper div.content div.right{
+        width: auto;
+        align-items: center;
+    }
+    section.contact-part1 div.wrapper div.content div.right div.questions{
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media(max-width:681px){
+    section.contact-part2 div.wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width:426px){
+    #h1{
+        font-size: 40px;
+    }
+    section.contact-part1 div.wrapper div.content div.left{
+        width: 70%;
+    }
+    section.contact-part1 div.wrapper div.content div.left span{
+        font-size: 30px;
+    }
+    section.contact-part1{
+        margin-top: 30px;
+    }
+    section.contact-part1 div.wrapper div.content div.right{
+        flex-direction: column;
+        gap: 40px;
+    }
+    section.contact-part1 div.wrapper div.content div.right div.questions{
+        gap: 10px;
+    }
+    section.contact-part1 div.wrapper div.content div.right div.time div.time1,section.contact-part1 div.wrapper div.content div.right div.time div.time2{
+        align-items: center;
+    }
+}
+
+@media(max-width:376px){
+    section.contact-part1 div.wrapper div.content div.left span{
+        font-size: 25px;
+    }
+}

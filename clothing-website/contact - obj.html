@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/resp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Michroma&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="heading">
+        <div class="header">
+            <div class="left-header">
+                <div class="logo">
+                    <a href="#"><img src="./assets/logo.png" /></a>
+                </div>
+                <div class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">About us</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Contact</a>
+                </div>
+                <a href="#"><div class="buy">
+                    <button>Buy now</button>
+                </div></a>
+            </div>
+            <div class="right-header">
+                <div class="icons">
+                    <img src="./assets/shopping.gif" />
+                    <img src="./assets/search.svg" />
+                </div>
+                <div class="btn">
+                    <button id="myacc">My account</button>
+                    <img src="./assets/arrow_right.svg" />
+                </div>
+            </div>
+            <!-- hamburger menu used in responsive -->
+            <div class="hamburger">
+                <img src="./assets/hamburger_menu.svg" />
+            </div>
+        </div>
+        <!-- login interface to view customer details -->
+        <div class="login hide animate__animated" id="login">
+                <div class="top">
+                    <span>Log in</span>
+                    <img src="./assets/close.svg" id="closebtn"/>
+                </div>
+                <div class="input">
+                    <label>Username</label>
+                    <input type="text" id="usrName">
+                    <label>Password</label>
+                    <input type="text" id="pWord">
+                </div>
+                <div class="btn">
+                    <button id="loginbtn">Login</button>
+                </div>
+        </div>
+        <!-- Customer details -->
+        <div class="cust-details hide animate__animated" id="customer">
+            <div class="top">
+                <span>Customer Details</span>
+                <img src="./assets/close.svg" id="closebutton"/>
+            </div>
+            <ul id="DetailsInterface">
+                <!-- The data from local storage is displayed here -->
+            </ul>
+        </div>
+        <div class="title">
+            <h1 id="h1">Contact with us</h1>
+        </div>
+    </section>
+
+    <!-- Section displaying the location, opening time, mobile number and email-->
+    <section class="contact-part1">
+        <div class="wrapper">
+            <div class="content">
+                <div class="left">
+                    <p>Our address</p>
+                    <span>Level 13, 2 Elizabeth St,
+                        Melbourne, Victoria 3000,
+                        Australia</span>
+                </div>
+                <div class="right">
+                    <div class="time">
+                        <div class="time1">
+                            <p>Monday - Friday</p>
+                            <span>8<sup>00</sup> AM - 10<sup>00</sup>PM</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="time2">
+                            <p>Monday - Friday</p>
+                            <span>8<sup>00</sup> AM - 10<sup>00</sup>PM</span>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="questions">
+                        <p>Do you have any questions?</p>
+                        <div class="mobile">
+                            <img src="./assets/phone.svg" />
+                            <span>+61 (0) 383 766 284</span>
+                        </div>
+                        <div class="mail">
+                            <img src="./assets/mail.svg" />
+                            <span>noreply@envato.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./assets/clothing2-contact-pic1.jpg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for entrying customer details  -->
+    <section class="contact-part2">
+        <div class="wrapper">
+            <span>Need a quick help?</span>
+            <div class="names">
+                <input type="text" placeholder="Your name" id="UserName">
+                <input type="email" placeholder="Your email" id="UserEmail">
+            </div>
+            <div class="messages">
+                <input type="text" placeholder="Subject" id="UserSubject">
+                <textarea  placeholder="Message" cols="40" rows="20" id="UserMessage"></textarea>
+                <button id="sendBtn">Send A Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section promoting the 20% off sale -->
+    <section class="part6">
+        <div class="wrapper">
+            <div class="left">
+                
+            </div>
+            <div class="mid">
+                <span>get 20% off</span>
+                <p>Fusce dolor velit laoreet</p>
+                <a href="#"><div class="btn">
+                    <button>Learn more</button>
+                    <img src="./assets/arrow_right.svg" />
+                </div></a>
+            </div>
+            <div class="right">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- The bottom section where all the information about the company are given -->
+    <section class="footer">
+        <div class="wrapper">
+            <div class="contacts">
+                <div class="logo">
+                    <img src="./assets/logo.png" />
+                </div>
+                <div class="mobile">
+                    <img src="./assets/phone.svg" />
+                    <p>+61 (0) 383 766 284</p>
+                </div>
+                <div class="mail">
+                    <img src="./assets/mail.svg" />
+                    <p>noreply@envato.com</p>
+                </div>
+                <div class="images">
+                    <img src="./assets/clothing2-footer-pic1.png" />
+                </div>
+            </div>
+            <div class="ul1">
+                <ul>
+                    <li>
+                        <strong>Delivery</strong>
+                        <ul>
+                            <li><a href="#">-How it Works</a></li>
+                            <li><a href="#">-Free Delivery</a></li>
+                            <li><a href="#">-FAQ</a></li>
+                            <li><a href="#">-Payment methods</a></li>
+                            <li><a href="#">-Delivery areas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="ul2">
+                <ul>
+                    <li>
+                        <strong>Customer service</strong>
+                        <ul>
+                            <li><a href="#">-Orders</a></li>
+                            <li><a href="#">-Downloads</a></li>
+                            <li><a href="#">-Addresses</a></li>
+                            <li><a href="#">-Account details</a></li>
+                            <li><a href="#">-Logout</a></li>
+                            <li><a href="#">-Lost password</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="ul3">
+                <ul>
+                    <li>
+                        <strong>Useful links</strong>
+                        <ul>
+                            <li><a href="#">-Contact us</a></li>
+                            <li><a href="#">-Help & About us</a></li>
+                            <li><a href="#">-Shipping & Returns</a></li>
+                            <li><a href="#">-Refund Policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div class="bottom-wrapper">
+            <div class="copywright">
+                <p>&copy; 2021 - BeTheme. Muffin group - HTML by BeantownThemes</p>
+            </div>
+            <div class="policies">
+                <a href="#">Terms and conditions</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Cookies</a>
+                <img src="./assets/arrowup.svg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- importing external JS file -->
+    <script type="module" src="objscript.js"></script> 
+</body>
+</html>
