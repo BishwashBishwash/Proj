@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <section class="interface animate__animated animate__backInDown" id="interface">
+        <div class="header">
+          <div class="top">
+            <div class="right-side">
+                <img src="./assets/network.svg" id="netstatus" />
+                <span id="header-chat">Chat()</span>
+            </div>
+            <div class="left-side">
+                <img src="./assets/theme.svg" id="themebtn" />
+                <img src="./assets/add.svg" onclick="showmodel()" />
+            </div>
+          </div>
+          <div class="searchbar">
+            <img src="./assets/search.svg" />
+            <input type="search" placeholder="Search" id="search">
+          </div>
+        </div>
+        <div class="chat-lists">
+            <ul id="chatlist">
+                <li class="animate__animated">
+                    <div class="letter">
+                        <span>B</span>
+                    </div>
+                    <div class="infos">
+                        <h3>Bishwash Pokharel</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="delete">
+                        <img src="./assets/delete.svg" alt="delete" id="delbtn"/>
+                    </div>
+                </li>
+                <li class="animate__animated">
+                    <div class="letter">
+                        <h3>N</h3>
+                    </div>
+                    <div class="infos">
+                        <h3>Nabin Neupane</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="delete">
+                        <img src="./assets/delete.svg" alt="delete" id="delbtn"/>
+                    </div>
+                </li>
+                <li class="animate__animated">
+                    <div class="letter">
+                        <span>B</span>
+                    </div>
+                    <div class="infos">
+                        <h3>Bishal Chhetri</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="delete">
+                        <img src="./assets/delete.svg" alt="delete" id="delbtn"/>
+                    </div>
+                </li>
+                <li class="animate__animated">
+                    <div class="letter">
+                        <span>B</span>
+                    </div>
+                    <div class="infos">
+                        <h3>Binay Sharma</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="delete">
+                        <img src="./assets/delete.svg" alt="delete"/>
+                    </div>
+                </li>
+                <li class="animate__animated">
+                    <div class="letter">
+                        <span>B</span>
+                    </div>
+                    <div class="infos">
+                        <h3>Bishowrup Chapagain</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="delete">
+                        <img src="./assets/delete.svg" alt="delete"/>
+                    </div>
+                </li>
+                <li class="animate__animated">
+                    <div class="letter">
+                        <span>H</span>
+                    </div>
+                    <div class="infos">
+                        <h3>Himal Bhandari</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="delete">
+                        <img src="./assets/delete.svg" alt="delete"/>
+                    </div>
+                </li>
+                <li class="animate__animated">
+                    <div class="letter">
+                        <span>A</span>
+                    </div>
+                    <div class="infos">
+                        <h3>Arjun Kandel</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="delete">
+                        <img src="./assets/delete.svg" alt="delete"/>
+                    </div>
+                </li>
+                <li class="animate__animated">
+                    <div class="letter">
+                        <span>L</span>
+                    </div>
+                    <div class="infos">
+                        <h3>Lionel Ronaldo</h3>
+                        <p>Lets play football</p>
+                    </div>
+                    <div class="delete">
+                        <img src="./assets/delete.svg" alt="delete"/>
+                    </div>
+                </li>
+            </ul>
+            <div class="empty" id="empty">
+                <img src="./assets/empty.svg" />
+                <p>Your chat list is empty</p>
+            </div>
+        </div>
+        <div class="adduser hide animate__animated" id="adduser">
+            <div class="top">
+                <h2>Add New Chat</h2>
+                <img src="./assets/close.svg" onclick="closemodel()"/>
+            </div>
+            <div class="bottom">
+                <label>User Name</label>
+                <input type="text" placeholder="i.e. Messi" id="username">
+                <label>Message</label>
+                <input type="text" placeholder="What's up!" id="usermessage">
+            </div>
+            <div class="btns">
+                <button id="btn1" onclick="useradd()" >Add</button>
+                <button onclick="closemodel()" id="btn2" >Close</button>
+            </div>
+        </div>
+        <div class="overlay hide" id="overlay"></div>
+    </section>
+    <script src="./styles/script.js"></script>
+</body>
+</html>
